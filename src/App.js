@@ -6,13 +6,16 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 export class App extends Component {
   render() {
     return (
-      <Router>
-        <div>
+      <div>
+        <Router>
           <Navbar />
 
           <Switch>
             <Route exact path="/">
               <News key="general" country="in" category="general" />
+            </Route>
+            <Route exact path="/business">
+              <News key="business" country="in" category="business" />
             </Route>
             <Route exact path="/entertainment">
               <News key="entertainment" country="in" category="entertainment" />
@@ -33,8 +36,8 @@ export class App extends Component {
               <News key="technology" country="in" category="technology" />
             </Route>
           </Switch>
-        </div>
-      </Router>
+        </Router>
+      </div>
     );
   }
 }

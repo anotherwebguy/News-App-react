@@ -18,13 +18,15 @@ export default class News extends Component {
 
     constructor(){
         super();
-        console.log('hii')
+        
         this.state = {
             articles: [],
             loading: false,
             page: 1,
-            totalResults: 0
+            totalResults: 0,
+            // category: this.props.category
         }
+        // console.log(this.state.category)
     }
 
     async componentDidMount(){
