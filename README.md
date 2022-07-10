@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
@@ -72,4 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 =======
 # News-App-react
 News Webapp made in react by fetching data from newsapi.org
->>>>>>> 4e907e05c4172c83761ff9b420d7f2e5783851ab
+
