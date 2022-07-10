@@ -1,13 +1,16 @@
 import React, { Component } from "react";
+import {
+  Link
+} from "react-router-dom";
 
 export default class Navbar extends Component {
   render() {
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-          <a className="navbar-brand" href="/">
-            Navbar
-          </a>
+          <Link className="navbar-brand" to="/">
+          Atankwadi News
+          </Link>
           <button
             className="navbar-toggler"
             type="button"
@@ -23,14 +26,39 @@ export default class Navbar extends Component {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav mr-auto">
               <li className="nav-item active">
-                <a className="nav-link" href="/">
-                  Home <span className="sr-only">(current)</span>
-                </a>
+                <Link className="nav-link" to="/">
+                  Home 
+                </Link>
               </li>
               <li className="nav-item">
-                <a className="nav-link" href="/">
-                  About
-                </a>
+                <Link className="nav-link" to="/entertainment">
+                  Entertainment
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/general">
+                  General
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/health">
+                  Health
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/science">
+                  Science
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/sports">
+                  Sports
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" to="/technology">
+                  Technology
+                </Link>
               </li>
             </ul>
             <form className="form-inline my-2 my-lg-0">
