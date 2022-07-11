@@ -1,10 +1,9 @@
-import React, { Component } from "react";
+import React from "react";
 import Navbar from "./components/Navbar";
 import News from "./components/News";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 
-export class App extends Component {
-  render() {
+const App = () => {
     return (
       <div>
         <Router>
@@ -39,7 +38,6 @@ export class App extends Component {
         </Router>
       </div>
     );
-  }
 }
 
 export default App;
